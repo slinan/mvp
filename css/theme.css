@@ -1,0 +1,897 @@
+
+/*
+    Template Name: MediAid-Ultimate medicle care
+    Author: Themeturn
+    Author URI: 
+    Description: 
+    Version: 1.0
+*/
+
+/* Table of Content
+==================================================
+1.  Global Styles
+2.  Typography
+3.  Common styles
+4.  Navigation
+5.  HEADER AREA
+6.  SECTION ABOUT
+7.  SECTION SERVICES
+8.  SECTION PORTFOLIO
+9.  SECTION FEATURES
+10.  SECTION EDUCATION
+11. SECTION TESTIMONIAL
+12. SECTION CONTACT
+13. SECTION FOOTER
+
+
+*/
+
+/* 1 - Google Font
+------------------------------------------------------------------------*/
+
+@import 'https://fonts.googleapis.com/css?family=Farsan';
+@import 'https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,700,800,900';
+
+
+
+@font-face {
+    font-family: 'Simple-Line-Icons';
+    src:url('fonts/Simple-Line-Icons.eot');
+    src:url('fonts/Simple-Line-Icons.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Simple-Line-Icons.woff') format('woff'),
+        url('fonts/Simple-Line-Icons.ttf') format('truetype'),
+        url('fonts/Simple-Line-Icons.svg#Simple-Line-Icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* 2 - General styles
+------------------------------------------------------------------------*/
+:-moz-selection {
+    background-color: #e6ae49;
+    color: #FFF;
+}
+
+::-moz-selection {
+    background-color: #e6ae49;
+    color: #FFF;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    line-height: 24px;
+    color: #6a6a6a;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+
+
+a, a:focus, a:active, a:link, img {
+    outline: none;
+}
+
+
+a {
+    color:#555;
+    -webkit-transition: color .2s ease;
+    -moz-transition: color .2s ease;
+    -ms-transition: color .2s ease;
+    -o-transition: color .2s ease;
+    transition: color .2s ease;
+}
+
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #323232;
+    transition: all 0.25s ease 0s;
+    -moz-transition: all 0.25s ease 0s;
+    -webkit-transition: all 0.25s ease 0s;
+    -o-transition: all 0.25s ease 0s;
+}
+
+    a:hover {
+        color:#50D2C2;
+        text-decoration: none;
+        transition: all 0.25s ease 0s;
+        -moz-transition: all 0.25s ease 0s;
+        -webkit-transition: all 0.25s ease 0s;
+        -o-transition: all 0.25s ease 0s;
+    }
+
+a:focus {
+    outline:none;
+    outline-offset:0;
+}
+
+a:link,
+a:visited{
+    text-decoration: none;
+}
+
+
+
+.dark-bg {
+    background: #323232;
+    color: #fff;
+}
+
+
+img {
+     height: auto;
+    max-width: 100%;
+    border: none;
+    outline: none;
+    transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+}
+
+iframe,
+audio {
+    width: 100%;
+    height: auto;
+    border: none;
+}
+
+ul,li{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+/* 2.1 - Headings 
+--------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    color: #232323;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 43px;
+    line-height: 40px;
+    font-weight: 900;
+}
+
+
+h2 {
+    font-size: 27px;
+    line-height: 37px;
+}
+
+h3 {
+    font-size: 21px;
+    line-height: 32px;
+}
+
+  
+
+h4 {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+
+
+h5 {
+    font-size: 16px;
+    line-height: 23px;
+}
+
+h6 {
+    font-size: 14px;
+    line-height: 18px;
+    
+}
+
+
+
+p {
+    line-height: 28px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    font-family: 'Lato', sans-serif;
+}
+
+/* buttons style */
+.btn{
+    padding: 14px 40px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 0px;
+    text-transform: uppercase;
+     -webkit-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+}
+.btn-container{
+    margin-top: 35px;
+}
+
+.btn-primary{
+    border:3px solid#2A2A2A;
+    background: #2A2A2A;
+    color:#fff;
+}
+
+.btn-primary:hover{
+    background:#189bd5;
+    border-color:#189bd5;
+    color:#fff;
+}
+.btn-feature{
+    border:3px solid#189bd5;
+    background: #189bd5;
+    color: #fff ;
+}
+
+.btn-feature:hover{
+    background: #fff;
+    border-color: #fff;
+    color:#189bd5;
+}
+
+
+
+.btn-white{
+    border:3px solid#fff;
+    background: #fff;
+    color: #2A2A2A;
+}
+
+.btn-white:hover{
+    background: #232323;
+    color: #fff;
+    border-color:#232323;
+}
+
+
+/*==================== section heading ========================*/
+.section-heading{
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.section-padding{
+    padding: 90px 0px;
+}
+
+.big-title{
+    font-size: 45px;
+    line-height: 55px;
+    color: #232323;
+    letter-spacing:0px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+}
+.big-title span{
+    color: #189BD5;
+}
+.section-heading p{
+    font-family: 'Farsan', cursive;
+    font-size: 18px;
+    width: 70%;
+    margin: 0 auto;
+}
+.heading-sub{
+    color: #189BD5;
+}
+
+
+
+/*======================================================
+     navigation 
+==========================================================*/
+
+.navbar-custom {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    background: #fff;
+    padding: 0px;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0px;
+}
+.navbar-custom .navbar-brand  span{
+    text-transform: capitalize;
+    color: #50D2C2;
+}
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+
+.navbar-custom .nav li a {
+    color: #232323;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: all .3s ease;
+    padding: 20px 20px;
+}
+
+.navbar-custom .nav li a:hover {
+    outline: 0;
+    background: #189bd5;
+    color: #fff;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    outline: 0;
+    background: #189bd5;
+    color: #fff;
+}
+
+
+@media(min-width:768px) {
+    .navbar-custom {
+        border-bottom: 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        -webkit-box-shadow: 0px 0px 2px #777;
+        box-shadow: 0px 0px 2px #777;
+        
+    }
+   
+.navbar-custom .nav li.active a{
+       background: #189bd5;
+        color: #fff;
+    }
+
+}
+
+
+/*============================================
+    SLIDER SECTION
+===============================================*/
+#section-slider {
+    background: url("../images/bg/banner.jpg");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s ;
+    transition:  all .4s ease 0s;
+}
+.slider-caption {
+    z-index:2;
+    color: #fff;
+    padding: 200px 0px 160px;
+    width: 70%;
+    margin: 0 auto;
+}
+.slider-caption h2.slider-title{
+    font-size: 50px;
+    color: #fff;
+    line-height: 45px;
+    letter-spacing: 0px;
+    margin: 30px 0px;
+    
+}
+.slider-caption h2.slider-title span{
+    color: #189bd5;
+}
+.slider-caption p.slider-sub{
+    width: 35%;
+    margin: 0 auto;
+    background: #189bd5;
+    color: #fff;
+    display: block;
+    padding: 8px 0px;
+    font-weight: 700;
+    margin-top:50px;
+}
+
+.slider-caption p{
+    color: cyan;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    width: 70%;
+    margin: 0 auto 50px;
+}
+.carousel-control {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: none;
+    top: 50%;
+    opacity: 0;
+}
+
+.carousel-control.right,
+.carousel-control.left{
+    background: none;
+    opacity: 0;
+}
+
+
+#slider-carousel  .carousel-control.right i,
+#slider-carousel  .carousel-control.left i{
+    width: 60px;
+    height: 60px;
+    border: 2px solid#fff;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 13px;
+    opacity: 1;
+}
+
+#slider-carousel .carousel-control.right:hover i,
+#slider-carousel  .carousel-control.left:hover i{
+    background: #189bd5;
+    color: #fff;
+    border-color: #189bd5;
+}
+
+#section-slider:hover .carousel-control{
+    opacity: 1;
+}
+
+
+
+/*================================
+    SECTION FEATURES
+==================================*/
+#section-features .section-padding,#section-services .section-padding{
+    padding-bottom: 40px;
+}
+.feature-box{
+    margin-bottom: 40px;
+}
+.feature-inner h4{
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+}
+
+.feature-inner h3{
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    float: left;
+    margin-right: 15px;
+    display: inline-block;
+    margin-top: -10px;
+}
+
+
+/*================================
+    SECTION PARRALAX-1
+==================================*/
+
+
+#section-parallax{
+    background: url("../images/bg/service-bg.jpg")fixed 50% 50%;
+    background-size: cover;
+    position: relative;
+}
+.parallax-overlay.black-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0% 0%;
+}
+.parallax-overlay.blue-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: #189BD5 none repeat scroll 0% 0%;
+    opacity: .93;
+}
+
+.parallax-inner{
+    width: 60%;
+    margin: 0 auto;
+}
+.parallax-inner h2{
+    margin-bottom: 20px;
+    letter-spacing: 0px;
+    font-weight: 600;
+}
+.parallax-inner h2,.parallax-inner p{
+    color: #fff;
+}
+.parallax-inner p{
+    margin-bottom: 30px;
+}
+
+.color{
+    background: #0284BA;
+}
+
+
+/*================================================
+    SECTION SERVICES
+=================================================*/
+
+.testimonial-header div p {
+    color: #fff;
+}
+
+.testimonial-header div h2 {
+   color: #fff;
+}
+
+.testimonial-inner p {
+    color: #fff !important;
+    font-style: italic !important;
+}
+
+.testimonial-inner h4 {
+    color: #fff !important;
+    font-style: bold !important;
+}
+
+.service-box{
+    margin-bottom: 50px;
+}
+.service-icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin: 0 auto;
+    padding-top: 10px;
+    background:#f8f8f8;
+    text-align: center;
+}
+
+.service-icon2{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin: 0 auto;
+    background:#f8f8f8;
+    text-align: center;
+}
+
+
+.service-inner h4{
+    color: darkgray;
+    margin: 20px 0px 15px;
+    text-transform: capitalize;
+}
+
+.service-inner p{
+    color: darkgray; 
+}
+
+/*================================================
+    SECTION COUNTER
+=================================================*/
+
+#section-counter{
+    background: url("../images/bg/counter-bg.jpg") fixed 50% 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+.facts-wrap-num{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    color: #333;
+}
+
+.counter-text h5{
+    font-size: 14px;
+}
+
+.counter-icon{
+    float: left;
+    margin-right: 20px;
+    display: block;
+    
+}
+.counter-icon i{
+    color: #189BD5;
+    font-size: 35px;
+    line-height: 35px;
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    text-align: center;
+    padding-top: 15px;
+    border: 1px solid#eee;
+}
+
+
+/*================================================
+    SECTION Testimonial
+=================================================*/
+#section-testimnial{
+    background: #F7F8FA;
+    padding: 70px 0px;
+}
+
+.item-text{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+.item-text i{
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    padding-top: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+    border: 1px solid#eee;
+}
+.item-text p{
+    margin: 25px 0px;
+}
+.item-text ul li p{
+    margin: 0px;
+}
+
+/*================================================
+    SECTION CONTACT
+=================================================*/
+
+.contact-box{
+    border: 3px solid#f5f5f5;
+    padding: 15px ;
+    margin-top: 20px;
+}
+.contact-box .icon-box{
+    float: left;
+    width: 80px;
+    margin-right: 30px;
+    margin-top: -40px;
+    background: #fff;
+    height: 60px;
+    padding: 0px 10px;
+}
+
+.contact-inner{
+    clear: both;
+    padding-left: 90px;
+}
+.contact-inner p{
+    font-size: 18px;
+}
+
+
+
+
+/*================================================
+    SECTION FOOTER
+=================================================*/
+
+#section-footer{
+    background: #111;
+    padding: 20px 0px;
+}
+
+
+.footer-content-left p{
+    font-size: 16px;
+    color: #eee;
+}
+
+.footer-content-right p{
+    text-align: right;
+    color: #eee;
+    font-size: 16px;
+}
+
+.right{
+    float: right;
+}
+
+
+/*=========================================
+    PAGES
+================================================*/
+
+
+/*==========================
+    SECTION BANNER IMG
+==================================*/
+
+#section-banner{
+    background: url("../images/bg/service-bg.jpg")fixed 50% 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.banner-caption{
+    padding: 130px 0px;
+    text-align: center;
+}
+.banner-title{
+    font-size: 40px;
+    padding-top: 60px;
+}
+
+.parallax-overlay.white-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0% 0%;
+}
+
+
+
+/*==========================SERVICE PAGE=================== */
+
+
+#section-services-page {
+    padding: 90px 0px 40px;
+}
+.service-img img{
+    width: 100%;
+}
+
+
+/*================================================
+    SECTION ABOUT PAGE
+=================================================*/
+
+
+.about-features{
+    margin-bottom: 35px;
+}
+.about-list{
+    margin-left: 40px;
+}
+.about-list li{
+    float: none;
+    clear: both;
+    margin-bottom: 20px;
+}
+.about-list li i{
+    width: 60px;
+    font-size: 25px;
+    height: 60px;
+    line-height: 30px;
+    color: #fff;
+    background: #189BD5;
+    border-radius: 4%;
+    text-align: center;
+    padding-top: 15px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom:25px;
+}
+.about-text{
+  float: left;
+}
+
+/*================================================
+    SECTION CLIENTS PAGE
+=================================================*/
+#section-clients{
+    padding: 30px 0px;
+    background: url("../images/client/logos-bg.jpg");
+}
+
+
+
+/*=========================================
+    SECTION TESTIMONIAL PAGE
+===============================================*/
+
+#section-testimnial-page #testimonial-carousel .item-text p, #section-testimnial-page #testimonial-carousel .item-text h5 {
+    color: #fff;
+}
+
+#section-testimnial-page{
+    background: url("../images/bg/counter.jpg");
+    background-size: cover;
+    position: relative;
+    padding: 50px 0px;
+}
+
+
+/*=========================================
+    SECTION CONTACT PAGE
+===============================================*/
+
+.contact-form-wrap{
+    -webkit-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+    background: #fff;
+    padding: 30px 10px;
+    border-radius: 3px;
+}
+
+#contact-form .form-control{
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid#ddd;
+    min-height: 50px;
+}
+#contact-form .form-group{
+    margin-bottom: 25px;
+}
+
+.form-control:hover,.form-control:focus{
+    border-color: #e1e1e1;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.contact-form-field:focus{
+    background: #F5F5F5;
+}
+.contact-form-field {
+    border-radius: 2px;
+    color: #444;
+    background-color: transparent;
+    font-family: "Muli",sans-serif;
+    font-size: 13px;
+    padding-left: 26px;
+    line-height: 20px;
+    -webkit-transition: all .5s ease-in-out 0s;
+    -o-transition: all .5s ease-in-out 0s;
+    transition: all .5s ease-in-out 0s;
+}
+
+
+.contact-box.contact-page   {
+    padding: 5px;
+    margin-bottom: 25px;
+}
